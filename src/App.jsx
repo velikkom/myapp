@@ -16,6 +16,7 @@ import { Clock1 } from "./components/04-clock-1/Clock1";
 import { Greetings } from "./components/05-proops/Greetings";
 import { Products } from "./components/05-proops/Products";
 import { Clock2 } from "./components/06-clock-2/Clock2";
+import {  NewImage } from "./components/07-images/image";
 
 
 
@@ -38,9 +39,10 @@ const App = () => {
       <Style5/>
       <Clock1/>
       <Greetings/>      
-      <Products/>*/}
+      <Products/>
       <Clock2 textColor="yellow" bgColor="navy" />
-			<Clock2 textColor="white" bgColor="black" hideTime={true} />
+  <Clock2 textColor="white" bgColor="black" hideTime={true} />*/}
+      <NewImage/>
 		</div>
   );
 };
