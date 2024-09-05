@@ -17,6 +17,8 @@ import { Greetings } from "./components/05-proops/Greetings";
 import { Products } from "./components/05-proops/Products";
 import { Clock2 } from "./components/06-clock-2/Clock2";
 import {  NewImage } from "./components/07-images/image";
+import {  Gallery } from "./components/08-image-galery/galerry";
+import { ProfileCard } from "./components/09-profile-card/profile-card";
 
 
 
@@ -41,8 +43,10 @@ const App = () => {
       <Greetings/>      
       <Products/>
       <Clock2 textColor="yellow" bgColor="navy" />
-  <Clock2 textColor="white" bgColor="black" hideTime={true} />*/}
+  <Clock2 textColor="white" bgColor="black" hideTime={true} />
       <NewImage/>
+      <Gallery/>*/}
+      <ProfileCard/>
 		</div>
   );
 };
