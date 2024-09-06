@@ -24,6 +24,8 @@ import { Icons } from "./components/11-icons/icons";
 import { Event1 } from "./components/12-events/event1";
 import { Event2 } from "./components/12-events/event2";
 import { Shop } from "./components/13-shop/shop";
+import { State } from "./components/14-statesless/state";
+import { Statesless } from "./components/14-statesless/statesless";
 
 
 const App = () => {
@@ -61,9 +63,11 @@ const App = () => {
         <ReactBootstrap/>
       <Icons/>
       <Event1/>
-      <Event2/>*/}
+      <Event2/>
       <Shop/>
-
+      <Statesless/>
+      */}
+    <State/>
 
     </div>
   );
