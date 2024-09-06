@@ -16,10 +16,14 @@ import { Clock1 } from "./components/04-clock-1/Clock1";
 import { Greetings } from "./components/05-proops/Greetings";
 import { Products } from "./components/05-proops/Products";
 import { Clock2 } from "./components/06-clock-2/Clock2";
-import {  NewImage } from "./components/07-images/image";
-import {  Gallery } from "./components/08-image-galery/galerry";
+import { NewImage } from "./components/07-images/image";
+import { Gallery } from "./components/08-image-galery/galerry";
 import { ProfileCard } from "./components/09-profile-card/profile-card";
-
+import { ReactBootstrap } from "./components/10-bootstrap/react-bootstrap";
+import { Icons } from "./components/11-icons/icons";
+import { Event1 } from "./components/12-events/event1";
+import { Event2 } from "./components/12-events/event2";
+import { Shop } from "./components/13-shop/shop";
 
 
 const App = () => {
@@ -45,9 +49,23 @@ const App = () => {
       <Clock2 textColor="yellow" bgColor="navy" />
   <Clock2 textColor="white" bgColor="black" hideTime={true} />
       <NewImage/>
-      <Gallery/>*/}
-      <ProfileCard/>
-		</div>
+      <Gallery/>
+      <ProfileCard
+        avatar="profile.jpg"
+        name="Suzanne Doe"
+        location="San Francisco, USA"
+        followers={5423545}
+        following={2300}
+        shots={10}
+        />
+        <ReactBootstrap/>
+      <Icons/>
+      <Event1/>
+      <Event2/>*/}
+      <Shop/>
+
+
+    </div>
   );
 };
 

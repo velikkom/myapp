@@ -1,33 +1,51 @@
 import React from "react";
 import "./profile-card.scss";
 
-export const ProfileCard = () => {
-  return (
-    <div className="profile-card">
-      <div className="header">
-        <img src="/images/profile/profile.jpg" alt="" />
-      </div>
-      <div className="content">
-        <img src="/images/profile/profile.jpg" alt="" className="avatar" />
-        <h2>Vladislav Mikhailov</h2>
-        <h4>Russia, Krasnosdar</h4>
+const formatStat = (num) => {
+	let text = "";
 
-        <ul>
-          <li>
-            <h3>1</h3>
-            <p>Shots</p>
-          </li>
+	if (num > 1000000) {
+		text = (num / 1000000).toFixed(1) + "M";
+	} else if (num > 1000) {
+		text = (num / 1000).toFixed(1) + "K";
+	} else {
+		text = num;
+	}
 
-          <li>
-            <h3>2</h3>
-            <p>Followers</p>
-          </li>
-          <li>
-            <h3>3</h3>
-            <p>Following</p>
-          </li>
-        </ul>
-      </div>
-    </div>
-  );
+	return text;
+};
+
+export const ProfileCard = (props) => {
+  const { avatar, name, location, followers, following, shots } = props;
+
+	const imageURL = `/images/profile/${avatar}`;
+
+	return (
+		<div className="profile-card">
+			<div className="header">
+				<img src={imageURL} alt="" />
+			</div>
+			<div className="content">
+				<img src={imageURL} alt="" className="avatar" />
+
+				<h2>{name}</h2>
+				<h4>{location}</h4>
+
+				<ul className="stats">
+					<li>
+						<h3>{formatStat(shots)}</h3>
+						<p>Shot{shots > 1 && "s"}</p>
+					</li>
+					<li>
+						<h3>{formatStat(followers)}</h3>
+						<p>Follower{followers > 1 && "s"}</p>
+					</li>
+					<li>
+						<h3>{formatStat(following)}</h3>
+						<p>Following</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	);
 };
