@@ -1,3 +1,4 @@
+import { CgLock } from "react-icons/cg";
 import HelloReact from "./components/01-hello/HelloReact";
 import HelloWorld from "./components/01-hello/hello-world";
 import { Jsx2 } from "./components/02-jsx/Jsx2";
@@ -29,6 +30,10 @@ import { Statesless } from "./components/14-statesless/statesless";
 import { Counter1 } from "./components/15-counter/counter1";
 import { Counter2 } from "./components/15-counter/counter2";
 import { UserList } from "./components/16-birthday/user-list";
+import { UseEffect } from "./components/17.use-effect/useEffect1";
+import { Clock3 } from "./components/18-clock-3/Clock3";
+import { Useeffect3 } from "./components/17.use-effect/useEffect3";
+import { CountryFilter } from "./components/19-country-filter/country-filter";
 
 
 const App = () => {
@@ -72,8 +77,12 @@ const App = () => {
     <State/>
 
     <Counter1/>
-    <Counter2/>*/}
+    <Counter2/>
     <UserList/>
+    <UseEffect/>
+    <Clock3/>
+    <Useeffect3/>*/}
+    <CountryFilter/>
 
     </div>
   );
