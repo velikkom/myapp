@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "digital";
+  src: url("../fonts/ds-digi.ttf");
+}
+.clock-container {
+  font-family: "digital", sans-serif;
+  background-color: rgb(24, 24, 24);
+  color: greenyellow;
+  padding: 20px;
+  font-size: 3rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.clock-container .time {
+  font-size: 6rem;
+}
+.clock-container .day {
+  font-size: 2rem;
+  text-align: center;
+}/*# sourceMappingURL=clock.css.map */

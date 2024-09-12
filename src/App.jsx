@@ -37,6 +37,8 @@ import { CountryFilter } from "./components/19-country-filter/country-filter";
 import { UseRef } from "./components/20-useref/useRef";
 import { ClassComponent } from "./components/21-class-componenet/classComponent";
 import { ProductStore } from "./components/22-products/product-store";
+import { Reciepes } from "./components/23-reciepes/reciepes";
+import { Parent } from "./components/24-child-to-parent/parent";
 
 
 const App = () => {
@@ -86,11 +88,14 @@ const App = () => {
     <Clock3/>
     <Useeffect3/>
     <CountryFilter/>
-     <UseRef/>
+     <UseRef/> 
 <ClassComponent/>
+<ProductStore/>
+<Reciepes/>
+
     */}
    
-        <ProductStore/>
+       <Parent/>
     </div>
   );
 };
