@@ -34,6 +34,9 @@ import { UseEffect } from "./components/17.use-effect/useEffect1";
 import { Clock3 } from "./components/18-clock-3/Clock3";
 import { Useeffect3 } from "./components/17.use-effect/useEffect3";
 import { CountryFilter } from "./components/19-country-filter/country-filter";
+import { UseRef } from "./components/20-useref/useRef";
+import { ClassComponent } from "./components/21-class-componenet/classComponent";
+import { ProductStore } from "./components/22-products/product-store";
 
 
 const App = () => {
@@ -81,9 +84,13 @@ const App = () => {
     <UserList/>
     <UseEffect/>
     <Clock3/>
-    <Useeffect3/>*/}
+    <Useeffect3/>
     <CountryFilter/>
-
+     <UseRef/>
+<ClassComponent/>
+    */}
+   
+        <ProductStore/>
     </div>
   );
 };

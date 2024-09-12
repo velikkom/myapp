@@ -6,12 +6,15 @@ export const CountryFilter = () => {
   const [countries, setCountries] = useState(data);
 
   useEffect(() => {
-    if (!searchText) return;
+    if (!searchText) {
+      setCountries([]);
+      return;
+    }
+
     const arr = data.filter((item) =>
       item.name.toLocaleLowerCase().includes(searchText.toLocaleLowerCase())
     );
     setCountries(arr);
-    console.log(arr);
   }, [searchText]);
 
   return (
@@ -24,7 +27,7 @@ export const CountryFilter = () => {
         onChange={(e) => setSearchText(e.target.value)}
       />
 
-      <Card className="mt-4">
+      <Card className={`mt-4 ${!countries.length ? "d-none" : " "}`}>
         <Card.Body>
           {countries.map((item, index) => (
             <p key={item.code}>
