@@ -39,6 +39,10 @@ import { ClassComponent } from "./components/21-class-componenet/classComponent"
 import { ProductStore } from "./components/22-products/product-store";
 import { Reciepes } from "./components/23-reciepes/reciepes";
 import { Parent } from "./components/24-child-to-parent/parent";
+import { Form2 } from "./components/25-forms/form2";
+import { Form3 } from "./components/25-forms/form3";
+import { Form4 } from "./components/25-forms/form4";
+import { Form5 } from "./components/25-forms/form5";
 
 
 const App = () => {
@@ -92,10 +96,13 @@ const App = () => {
 <ClassComponent/>
 <ProductStore/>
 <Reciepes/>
-
+<Parent/>
+<Form2/>
+<Form3/>
+<Form4/>
     */}
    
-       <Parent/>
+     <Form5/>  
     </div>
   );
 };
