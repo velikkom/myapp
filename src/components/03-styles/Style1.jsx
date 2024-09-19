@@ -1,4 +1,4 @@
-const Style1 = () => {
+export const Style1 = () => {
   const isRadius = false;
   const padding = "20px";
 
@@ -26,4 +26,4 @@ const Style1 = () => {
   );
 };
 
-export default Style1;
+

@@ -64,11 +64,12 @@ export const Form6 = () => {
                 <Form.Group className="mb-3" controlId="lastName">
                     <Form.Label>Last Name</Form.Label>
                     <Form.Control
-                        name="lastName"
+						{...formik.getFieldProps("lastName")}
+                       //name="lastName"
                         type="text"
-                        value={formik.values.lastName}
-                        onChange={formik.handleChange}
-                        onBlur={formik.handleBlur}
+                        // value={formik.values.lastName}
+                        // onChange={formik.handleChange}
+                        // onBlur={formik.handleBlur}
                         isInvalid={isInvalid("lastName")}
                         isValid={isValid("lastName")}
                     />

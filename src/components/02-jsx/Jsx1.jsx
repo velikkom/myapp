@@ -6,7 +6,7 @@
 //Kural 3 : Bazı attributeler html den farklı yazılır camel case olarak.
  
 
-const Jsx1 = () => {
+export const Jsx1 = () => {
   return (
     <div>
         <label htmlFor="Jsx1">Jsx1</label>
@@ -15,4 +15,3 @@ const Jsx1 = () => {
   );
 };
 
-export default Jsx1;

@@ -1,7 +1,7 @@
 import React from 'react'
 import "./style5.scss";
 
-const Style5 = () => {
+export const Style5 = () => {
   return (
     <div className="titles">
         <h1>Style</h1>
@@ -9,5 +9,3 @@ const Style5 = () => {
     </div>
   )
 }
-
-export default Style5
