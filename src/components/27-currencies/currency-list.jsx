@@ -13,10 +13,10 @@ export const CurrencyList = () => {
         Exchange Rates
       </Dropdown.Toggle>
 
-      <Dropdown.Menu style={{height:"40vh",overflow:"auto"}}>
+      <Dropdown.Menu style={{ height: "40vh", overflow: "auto" }}>
         {arrCurrencies.map((item) => (
           <Dropdown.Item key={item[0]} href="#/action-1">
-           1  {item[0]} : {(1/item[1]).toFixed(2)} TL
+            1 {item[0]} : {(1 / item[1]).toFixed(2)} TL
           </Dropdown.Item>
         ))}
 
