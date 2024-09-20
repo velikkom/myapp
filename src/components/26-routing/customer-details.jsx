@@ -6,5 +6,5 @@ export const CustomerDetails = () => {
 
 	console.log(params);
 
-	return <div>CustomerDetails of {params.customerId}</div>;
+	return <div>Customer Details of {params.customerId}</div>;
 };
